@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f7f7f7;
+}
+.calculadora {
+    width: 300px;
+    background-color: rgba(114, 221, 212, 0.5);       
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Agora organiza os elementos filhos em coluna */
+    align-items: center; /* Isso centraliza os elementos filhos horizontalmente */
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.4);
+}
+#display{
+    width:85%;
+    height: 50px;
+    text-align: right;
+    font-size: 40px;
+    font-weight: bolder;
+    background-color: rgba(110, 141, 139, 0.5);
+    color: black;
+    margin: 20px 0; /* Isso adiciona margem apenas no topo e embaixo */
+    border-radius: 15px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.4);
+}
+.botoes { /* Estilo para o contêiner .botoes */
+    display: flex;
+    flex-direction: row;
+}
+.colum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 0;
+}
+.baixo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+button{
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(135, 177, 166);
+    color: black;
+    font-size: 40px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(2, 214, 168);
+
+}
+
+button.maior{
+    width: 60px;
+    aspect-ratio: 1 / 2.18;
+    margin: 5px;
+}
+button.largo {
+    width: 200px;
+    aspect-ratio: 4 / 1;
+    margin: 5px;
+}

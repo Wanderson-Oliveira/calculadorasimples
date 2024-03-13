@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Completa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <input type="text" id="display" disabled>
+        <div class="botoes"> <!-- Contêiner para as colunas de botões -->
+            <div class="colum">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="inputValue('7')">7</button>
+                <button onclick="inputValue('4')">4</button>
+                <button onclick="inputValue('1')">1</button>
+            </div>
+            <div class="colum">
+                <button onclick="inputValue('/')">/</button>
+                <button onclick="inputValue('8')">8</button>
+                <button onclick="inputValue('5')">5</button>
+                <button onclick="inputValue('2')">2</button>        
+            </div>
+            <div class="colum">
+                <button onclick="inputValue('*')">*</button>
+                <button onclick="inputValue('9')">9</button>
+                <button onclick="inputValue('6')">6</button>
+                <button onclick="inputValue('3')">3</button>
+            </div>
+            <div class="colum">
+                <button onclick="inputValue('-')">-</button>
+                <button onclick="inputValue('+')">+</button>
+                <button class="maior" onclick="calculate()">=</button>
+            </div>
+        </div>
+        <div class="baixo"> <!-- Elemento .baixo fora do contêiner .botoes -->
+            <button class="largo" onclick="inputValue('0')">0</button>
+            <button onclick="inputValue('.')">.</button>
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
